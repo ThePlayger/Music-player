@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.wrapper {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #e3020f;
+}
+.cover_img {
+  width: 300px;
+  height: 300px;
+}
+.player {
+  background: #0e6122;
+  border-radius: 15px;
+  max-width: 400px;
+  width: 100%;
+  padding: 25px;
+}
+
+.cover {
+  display: flex;
+  justify-content: center;
+  margin: 25px 0;
+}
+
+.song {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  color: #07a29c;
+  text-align: center;
+}
+
+.progress__conteiner {
+  border-radius: 5px;
+  width: 100%;
+  background: #ffcc01;
+  height: 10px;
+  margin-top: 63px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.progress {
+  background: #e3020f;
+  border-radius: 5px;
+  height: 6px;
+  
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 190px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 45px;
+  cursor: pointer;
+}
+
+@keyframes rotateAnimation {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.active {
+  animation: rotateAnimation 3s linear infinite;
+}
